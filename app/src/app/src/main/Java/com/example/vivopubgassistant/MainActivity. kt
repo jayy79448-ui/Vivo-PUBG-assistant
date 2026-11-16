@@ -1,0 +1,18 @@
+package com.example.vivopubgassistant
+
+import android.app.Activity
+import android.os.Bundle
+import android.widget.TextView
+
+class MainActivity : Activity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        val message = TextView(this)
+        message.text = "Vivo PUBG Assistant is ready!"
+        message.textSize = 22f
+        message.setPadding(30, 50, 30, 30)
+
+        setContentView(message)
+    }
+}
